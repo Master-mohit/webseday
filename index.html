@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pseudo Classes</title>
+  <style>
+    /* 1. Focus: jab kisi input ya button pe user click kare ya tab press kare */
+    input:focus, button:focus {
+      outline: 2px solid orange;
+      background-color: #f0f8ff;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    button:hover {
+      background-color: lightgreen;
+      cursor: pointer;
+    }
+
+    button:active {
+      background-color: red;
+      color: white;
+    }
+
+    p:first-child {
+      color: red;
+    }
+
+    
+    p:last-child {
+      color: blue;
+    }
+
+    p:nth-child(3) {
+      font-weight: bold;
+    }
+
+    
+    div:empty {
+      border: 2px dashed black;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <a href="https://example.com" target="_blank">Visit Example</a><br><br>
+    <input type="text" placeholder="Enter your name">
+    <input type="password" placeholder="Enter password">
+    <button>Click me</button>
+    <p>This is para 1</p>
+    <p>This is para 2</p>
+    <p>This is para 3</p>
+   
+  </div>
+</body>
+</html>
